@@ -8,6 +8,7 @@ import axios from 'axios'
 import VueAxios from 'vue-axios'
 import Vuex from 'vuex'
 // index.js or main.js
+import VeeValidate from 'vee-validate'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
 import { fas } from '@fortawesome/free-solid-svg-icons'
@@ -30,6 +31,7 @@ library.add(fas.faCoffee, fas.faUserCircle, fas.faCompass, fas.faBoxOpen, fas.fa
   fas.faFile, fas.faUser, fas.faPowerOff, fas.faPlus, fas.faAngleLeft, fas.faBell, fas.faComments, fas.faDatabase,
   fas.faTrash
 )
+Vue.use(VeeValidate)
 Vue.use(VueAxios, axios)
 Vue.use(Vuex)
 Vue.component('font-awesome-icon', FontAwesomeIcon)
