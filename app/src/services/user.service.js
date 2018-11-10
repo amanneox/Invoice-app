@@ -1,6 +1,5 @@
 // import config from 'config'
 /* eslint-disable */
-import { authHeader } from '../helpers'
 import axios from 'axios'
 const config = {
   apiUrl:'https://11d48we87i.execute-api.ap-south-1.amazonaws.com/dev'
