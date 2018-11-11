@@ -11,7 +11,7 @@ public class InvoiceModel extends AuditModel {
     @GeneratedValue(strategy=GenerationType.AUTO)
     private Long id;
 
-    @NotBlank
+
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     @Size(min = 3, max = 100)
     private String name;
@@ -25,9 +25,9 @@ public class InvoiceModel extends AuditModel {
     @NotBlank
     private String cname;
 
-    @NotBlank
     private int number;
 
+    @NotBlank
     private String email;
 
     public String getName() {

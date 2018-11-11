@@ -20,9 +20,11 @@ public class UserModel extends AuditModel {
     private String password;
 
     @NotBlank
-    private String username;
+    private String email;
 
     @NotBlank
+    private String username;
+
     private int role;
     // Getters and Setters (Omitted for brevity)
 
@@ -64,5 +66,13 @@ public class UserModel extends AuditModel {
 
     public void setUsername(String username) {
         this.username = username;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
     }
 }

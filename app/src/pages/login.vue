@@ -16,7 +16,7 @@
          <span class="text-xs-left forgot">Forgot Password?</span>
        </v-flex>
        <v-flex>
-         <router-link to="/signup"><span class="text-xs-left signup">Sign Up</span>
+         <router-link to="/register"><span class="text-xs-left signup">Sign Up</span>
          </router-link>
        </v-flex>
      </v-layout>
@@ -56,7 +56,7 @@ methods:{
       }
       else {
         if (email && password) {
-          
+
             this.login({ email,password })
         }
       }
@@ -100,6 +100,7 @@ watch: {
 .signup{
   text-transform: capitalize;
   float: right;
+  color: black ;
 }
 a{
   text-decoration: none !important;

@@ -2,7 +2,7 @@
 /* eslint-disable */
 import axios from 'axios'
 const config = {
-  apiUrl:'https://11d48we87i.execute-api.ap-south-1.amazonaws.com/dev'
+  apiUrl:'http://paperless-dev.ap-south-1.elasticbeanstalk.com'
 }
 export const userService = {
   login,
@@ -25,6 +25,7 @@ async function login (email, password) {
    email,
    password
   }
+  console.log(requestOptions);
 try {
   const res = await axios.post(`${config.apiUrl}/user/authenticate`, requestOptions)
     .then(user => {
@@ -32,7 +33,7 @@ try {
       if (user.data.token) {
         // store user details and jwt token in local storage to keep user logged in between page refreshes
 
-        localStorage.setItem('user', JSON.stringify(user.data._doc))
+        localStorage.setItem('user', JSON.stringify(user.data))
       }
       return user.data
     })

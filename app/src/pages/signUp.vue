@@ -1,4 +1,6 @@
 <template lang="html">
+<div class="">
+    <brand/>
   <v-layout class="login-form" justify-center>
    <v-flex xs10 sm6 md4>
      <v-card>
@@ -25,11 +27,19 @@
      </v-card>
    </v-flex>
  </v-layout>
+ <version/>
+</div>
 </template>
 <script>
 /* eslint-disable */
+import brand from '@/components/Brand.vue'
+import version from '@/components/Footer.vue'
 import { mapState, mapActions } from 'vuex'
 export default {
+  components:{
+    brand,
+    version
+  },
   $_veeValidate: {
     validator: 'new'
   },

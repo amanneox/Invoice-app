@@ -13,6 +13,12 @@ import layoutheader from '@/components/LayoutHeader'
 export default {
   components: {
     layoutheader
+  },
+  created () {
+    const loggedIn = localStorage.getItem('user')
+    if (!loggedIn) {
+      this.$router.push('/login')
+    }
   }
 }
 </script>
