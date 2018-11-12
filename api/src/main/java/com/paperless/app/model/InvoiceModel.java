@@ -30,6 +30,7 @@ public class InvoiceModel extends AuditModel {
     @NotBlank
     private String email;
 
+
     public String getName() {
         return name;
     }
