@@ -106,7 +106,7 @@ export default {
   data: () => ({
     drawer: true,
     items: [
-      { icon: 'plus-square', text: 'Create Invoice', link: 'create' },
+      { icon: 'plus-square', text: 'Invoice Builder', link: 'build' },
       { icon: 'file', text: 'Invoice Manager', link: 'manage' },
       { icon: 'user-circle', text: 'Users', link: 'users' },
       { icon: 'plug', text: 'Plugins', link: 'plugins' },

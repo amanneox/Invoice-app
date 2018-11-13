@@ -33,7 +33,7 @@ public class InvoiceController {
         return invoiceRepo.save(invoice);
     }
 
-    @PutMapping("/user/{invoiceId}")
+    @PostMapping("/invoice/get/{invoiceId}")
     public InvoiceModel updateInvoice(@PathVariable Long invoiceId,
                                 @Valid @RequestBody InvoiceModel userRequest) {
         return invoiceRepo.findById(invoiceId)
@@ -45,7 +45,7 @@ public class InvoiceController {
     }
 
 
-    @DeleteMapping("/user/{invoiceId}")
+    @PostMapping("/invoice/delete/{invoiceId}")
     public ResponseEntity<?> deleteInvoice(@PathVariable Long invoiceId) {
         return invoiceRepo.findById(invoiceId)
                 .map(invoice -> {

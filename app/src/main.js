@@ -20,7 +20,7 @@ Vue.use(Vuetify, {
   theme: {
     primary: '#1C2541',
     secondary: '#b0bec5',
-    accent: '#8c9eff'
+    accent: '#FFB300'
   }
 })
 library.add(fas.faCoffee, fas.faUserCircle, fas.faCompass, fas.faBoxOpen, fas.faQuestion, fas.faMobileAlt, fas.faTruck

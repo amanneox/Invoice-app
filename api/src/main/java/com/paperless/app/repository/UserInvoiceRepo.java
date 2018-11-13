@@ -9,4 +9,5 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface UserInvoiceRepo extends JpaRepository<UserInvoice, Long> {
     Page<UserInvoice> findById (Long invoiceId, Pageable pageable);
+    // Incorrect QUERY should be findByInvoiceID
 }

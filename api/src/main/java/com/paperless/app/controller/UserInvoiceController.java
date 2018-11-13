@@ -14,6 +14,7 @@ import javax.validation.Valid;
 @RestController
 @CrossOrigin(origins = "*", allowedHeaders = "*")
 public class UserInvoiceController {
+
     @Autowired
     protected UserInvoiceRepo userInvoiceRepo;
     @Autowired
@@ -26,7 +27,6 @@ public class UserInvoiceController {
     @GetMapping("/user/invoice/{invoiceId}")
     public Page<UserInvoice> getInvoiceById(@PathVariable (value = "invoiceId") Long invoiceId,Pageable pageable) {
         return userInvoiceRepo.findById(invoiceId,pageable);
-
     }
     @PostMapping("/user/invoice/{invoiceId}")
     public UserInvoice createInvoice(@Valid @PathVariable Long invoiceId, @RequestBody UserInvoice invoice) {
