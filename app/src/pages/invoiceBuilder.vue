@@ -121,7 +121,6 @@ export default {
       this.create(invoice)
     },
     ...mapActions('invoice', ['create', 'get_All']),
-
   },
   mounted () {
     this.get_All()
