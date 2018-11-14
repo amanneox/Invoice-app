@@ -75,19 +75,20 @@ public class UserController {
         return userRepo.save(user);
     }
 
-    @PutMapping("/user/{userId}")
+    @PostMapping("/user/update/{userId}")
     public UserModel updateUser(@PathVariable Long userId,
                                    @Valid @RequestBody UserModel userRequest) {
         return userRepo.findById(userId)
                 .map(user -> {
-                    userRequest.setName(userRequest.getName());
-                    userRequest.setPassword(userRequest.getPassword());
-                    return userRepo.save(userRequest);
+                    user.setName(userRequest.getName());
+                    user.setPassword(userRequest.getPassword());
+                    user.setEmail(userRequest.getEmail());
+                    return userRepo.save(user);
                 }).orElseThrow(() -> new ResourceNotFoundException("User not found with id " + userId));
     }
 
 
-    @DeleteMapping("/user/{userId}")
+    @PostMapping("/user/delete/{userId}")
     public ResponseEntity<?> deleteUser(@PathVariable Long userId) {
         return userRepo.findById(userId)
                 .map(user -> {

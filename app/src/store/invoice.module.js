@@ -18,8 +18,8 @@ const actions = {
         error => commit('get_AllFailure', error)
       )
   },
-  getById ({commit}) {
-    invoiceService.getById()
+  getById ({commit}, id) {
+    invoiceService.getById(id)
       .then(
         current => {
           commit('getByIdSuccess', current)
@@ -70,7 +70,7 @@ const mutations = {
     state.items = { ...invoice }
   },
   getByIdSuccess (state, data) {
-    state.current = {data}
+    state.current = {...data}
   },
   get_AllFailure (state, error) {
     state.request = { error }

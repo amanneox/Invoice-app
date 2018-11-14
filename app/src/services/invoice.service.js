@@ -35,7 +35,7 @@ async function getById (id) {
    },
   }
 try {
-  const res = await axios.get(`${config.apiUrl}/invoice/get/${id}`)
+  const res = await axios.get(`${config.apiUrl}/invoice/${id}`)
 
   return res.data
 } catch (error) {
@@ -51,10 +51,10 @@ async function update (invoice) {
       "Access-Control-Allow-Origin" : "*",
       "Access-Control-Allow-Credentials" : true
    },
-    invoice
+    ...invoice
   }
 try {
-  const res = await axios.post(`${config.apiUrl}/invoice/put/${invoice.id}`, requestOptions)
+  const res = await axios.post(`${config.apiUrl}/invoice/update/${invoice.id}`, requestOptions)
 
 } catch (error) {
   return Promise.reject(error)

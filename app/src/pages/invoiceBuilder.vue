@@ -26,15 +26,14 @@
                <p class="layout-name">{{i.number}}</p>
             </v-flex>
             <v-flex xs12>
-               <p class="layout-name">{{i.id}}</p>
+               <p class="layout-name">Generated ID&nbsp;{{i.id}}</p>
             </v-flex>
             <v-flex xs12>
                <p class="layout-name">{{i.updatedAt}}</p>
             </v-flex>
 
-
            </v-layout>
-           <v-btn to="invoice" icon class="edit-icon" small fab dark color="primary">
+           <v-btn :to="`_invoice/${i.id}`" icon class="edit-icon" small fab dark color="primary">
             <v-icon dark>edit</v-icon>
            </v-btn>
          </v-container>
@@ -111,6 +110,7 @@ export default {
    setTimeout(() => (this[l] = false), 3000)
    this.loader = null
  },
+ 
 },
   components: {
     layoutheader

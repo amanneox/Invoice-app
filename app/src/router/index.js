@@ -4,6 +4,7 @@ import Home from '@/pages/home'
 import SignUp from '@/pages/signUp'
 import Login from '@/pages/login'
 import InvoiceBuilder from '@/pages/invoicebuilder'
+import Invoice from '@/pages/_invoice'
 Vue.use(Router)
 
 export default new Router({
@@ -27,6 +28,11 @@ export default new Router({
       path: '/build',
       name: 'InvoiceBuilder',
       component: InvoiceBuilder
+    },
+    {
+      path: '/_invoice/:id',
+      name: 'Invoice',
+      component: Invoice
     }
   ]
 })

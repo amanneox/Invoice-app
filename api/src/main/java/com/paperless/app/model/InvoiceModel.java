@@ -30,6 +30,15 @@ public class InvoiceModel extends AuditModel {
     @NotBlank
     private String email;
 
+    private String terms;
+
+    public String getTerms() {
+        return terms;
+    }
+
+    public void setTerms(String terms) {
+        this.terms = terms;
+    }
 
     public String getName() {
         return name;

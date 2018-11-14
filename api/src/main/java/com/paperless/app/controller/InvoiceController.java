@@ -33,14 +33,17 @@ public class InvoiceController {
         return invoiceRepo.save(invoice);
     }
 
-    @PostMapping("/invoice/get/{invoiceId}")
+    @PostMapping("/invoice/update/{invoiceId}")
     public InvoiceModel updateInvoice(@PathVariable Long invoiceId,
                                 @Valid @RequestBody InvoiceModel userRequest) {
         return invoiceRepo.findById(invoiceId)
                 .map(invoice -> {
-                    userRequest.setAddress(userRequest.getAddress());
-                    userRequest.setCname(userRequest.getCname());
-                    return invoiceRepo.save(userRequest);
+                    invoice.setAddress(userRequest.getAddress());
+                    invoice.setCname(userRequest.getCname());
+                    invoice.setEmail(userRequest.getEmail());
+                    invoice.setLogo(userRequest.getLogo());
+                    invoice.setTerms(userRequest.getTerms());
+                    return invoiceRepo.save(invoice);
                 }).orElseThrow(() -> new ResourceNotFoundException("Invoice not found with id " + invoiceId));
     }
 
