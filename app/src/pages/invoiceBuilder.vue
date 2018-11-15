@@ -15,7 +15,13 @@
          <v-flex v-for="i in pages" :key="`${i.id}-item`"  xs12 md4 class="content-box">
        <v-card class="layout-item item">
          <v-container>
+
            <v-layout row wrap>
+             <v-flex xs12>
+               <v-btn @click.prevent="$_remove(i.id)" class="trash-btn" icon>
+                   <font-awesome-icon class="trash-icon" icon="trash" size="lg" />
+                 </v-btn>
+             </v-flex>
             <v-flex xs12>
                <p class="layout-name subheading">{{i.cname}}</p>
             </v-flex>
@@ -27,9 +33,6 @@
             </v-flex>
             <v-flex xs12>
                <p class="layout-name">Generated ID&nbsp;{{i.id}}</p>
-            </v-flex>
-            <v-flex xs12>
-               <p class="layout-name">{{i.updatedAt}}</p>
             </v-flex>
 
            </v-layout>
@@ -110,17 +113,20 @@ export default {
    setTimeout(() => (this[l] = false), 3000)
    this.loader = null
  },
- 
+
 },
   components: {
     layoutheader
   },
   methods: {
+    $_remove(id){
+      this._delete(id)
+    },
     $_submit(){
       const invoice = this.form
       this.create(invoice)
     },
-    ...mapActions('invoice', ['create', 'get_All']),
+    ...mapActions('invoice', ['create', 'get_All','_delete']),
   },
   mounted () {
     this.get_All()
@@ -162,6 +168,12 @@ export default {
 </script>
 
 <style lang="css">
+.trash-btn{
+  float: right;
+}
+.trash-btn:hover{
+  color: red;
+}
 .v-dialog{
   background: white !important
 }

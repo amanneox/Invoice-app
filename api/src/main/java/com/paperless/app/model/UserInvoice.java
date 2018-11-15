@@ -1,11 +1,13 @@
 package com.paperless.app.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonProperty;
 import org.hibernate.annotations.OnDelete;
 import org.hibernate.annotations.OnDeleteAction;
 
 import javax.persistence.*;
 import javax.validation.constraints.Size;
+import java.util.List;
 
 @Entity
 @Table(name = "invoice_list")
@@ -17,6 +19,17 @@ public class UserInvoice extends AuditModel {
     @Size(min = 3, max = 100)
     private String user_name;
 
+    @ElementCollection
+    @JsonProperty("items")
+    private List<ItemData> items;
+
+    public List<ItemData> getItems() {
+        return items;
+    }
+
+    public void setItems(List<ItemData> items) {
+        this.items = items;
+    }
 
     @ManyToOne(fetch = FetchType.LAZY, optional = false)
     @JoinColumn(name = "invoice_id", nullable = false)

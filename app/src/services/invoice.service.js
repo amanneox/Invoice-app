@@ -7,7 +7,7 @@ export const invoiceService = {
   get_All,
   getById,
   update,
-  delete: _delete,
+  _delete,
   create
 }
 async function get_All () {
@@ -80,7 +80,6 @@ try {
 }
 async function _delete (id) {
   const requestOptions = {
-    method: 'DELETE',
     headers: {
       'invoice-Type': 'application/json',
       "Access-Control-Allow-Origin" : "*",
@@ -88,7 +87,7 @@ async function _delete (id) {
    },
   }
 try {
-  const res = await axios.get(`${config.apiUrl}/invoice/delete/${id}`, requestOptions)
+  const res = await axios.post(`${config.apiUrl}/invoice/delete/${id}`, requestOptions)
 } catch (error) {
   return Promise.reject(error)
 }

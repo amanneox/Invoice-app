@@ -1,12 +1,16 @@
 package com.paperless.app.model;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+import org.springframework.stereotype.Component;
+
 import java.io.Serializable;
-
+@Component
 public class ItemData implements Serializable {
+    @JsonProperty("name")
     private String name;
-
+    @JsonProperty("desc")
     private String desc;
-
+    @JsonProperty("price")
     private int price;
 
     public ItemData() {

@@ -42,10 +42,10 @@ const actions = {
         error => commit('createFailure', error)
       )
   },
-  delete ({ commit }, id) {
+  _delete ({ commit }, id) {
     commit('deleteRequest', id)
 
-    invoiceService.delete(id)
+    invoiceService._delete(id)
       .then(
         invoice => commit('deleteSuccess', id),
         error => commit('deleteSuccess', { id, error: error.toString() })
@@ -77,7 +77,7 @@ const mutations = {
   },
   deleteRequest (state, id) {
     // add 'deleting:true' property to invoice being deleted
-    state.invoice.items = state.invoice.items.map(invoice =>
+    state.items.content = state.items.content.map(invoice =>
       invoice.id === id
         ? { ...invoice, deleting: true }
         : invoice
@@ -85,11 +85,11 @@ const mutations = {
   },
   deleteSuccess (state, id) {
     // remove deleted invoice from state
-    state.invoice.items = state.invoice.items.filter(invoice => invoice.id !== id)
+    state.items.content = state.items.content.filter(invoice => invoice.id !== id)
   },
   deleteFailure (state, { id, error }) {
     // remove 'deleting:true' property and add 'deleteError:[error]' property to invoice
-    state.invoice.items = state.items.map(invoice => {
+    state.items.content = state.items.content.map(invoice => {
       if (invoice.id === id) {
         // make copy of invoice without 'deleting:true' property
         const { deleting, ...invoiceCopy } = invoice
