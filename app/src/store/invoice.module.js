@@ -1,3 +1,4 @@
+/* eslint-disable*/
 import { invoiceService } from '../services'
 
 const state = {
@@ -7,10 +8,10 @@ const state = {
 }
 
 const actions = {
-  get_All ({ commit }) {
+  get_All_invoice ({ commit }) {
     commit('get_AllRequest')
 
-    invoiceService.get_All()
+    invoiceService.get_All_invoice()
       .then(
         invoice => {
           commit('get_AllSuccess', invoice)
@@ -67,7 +68,8 @@ const mutations = {
     state.request = { loading: true }
   },
   get_AllSuccess (state, invoice) {
-    state.items = { ...invoice }
+    state.items = { ...invoice },
+    state.request = { loading: false }
   },
   getByIdSuccess (state, data) {
     state.current = {...data}

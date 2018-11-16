@@ -126,10 +126,10 @@ export default {
       const invoice = this.form
       this.create(invoice)
     },
-    ...mapActions('invoice', ['create', 'get_All','_delete']),
+    ...mapActions('invoice', ['create', 'get_All_invoice','_delete']),
   },
   mounted () {
-    this.get_All()
+    this.get_All_invoice()
   },
   computed: {
     ...mapState({invoice: 'invoice'}),

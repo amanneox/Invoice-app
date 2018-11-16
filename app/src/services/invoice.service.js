@@ -4,16 +4,16 @@ const config = {
   apiUrl:'http://paperless-dev.ap-south-1.elasticbeanstalk.com'
 }
 export const invoiceService = {
-  get_All,
+  get_All_invoice,
   getById,
   update,
   _delete,
   create
 }
-async function get_All () {
+async function get_All_invoice () {
   const requestOptions = {
     headers: {
-      'invoice-Type': 'application/json',
+      'Content-Type': 'application/json',
       "Access-Control-Allow-Origin" : "*",
       "Access-Control-Allow-Credentials" : true
    },
@@ -29,7 +29,7 @@ try {
 async function getById (id) {
   const requestOptions = {
     headers: {
-      'invoice-Type': 'application/json',
+      'Content-Type': 'application/json',
       "Access-Control-Allow-Origin" : "*",
       "Access-Control-Allow-Credentials" : true
    },
@@ -47,7 +47,7 @@ async function update (invoice) {
 
   const requestOptions = {
     headers: {
-      'invoice-Type': 'application/json',
+      'Content-Type': 'application/json',
       "Access-Control-Allow-Origin" : "*",
       "Access-Control-Allow-Credentials" : true
    },
@@ -64,7 +64,7 @@ try {
 async function create (invoice) {
   const requestOptions = {
     headers: {
-      'invoice-Type': 'application/json',
+      'Content-Type': 'application/json',
       "Access-Control-Allow-Origin" : "*",
       "Access-Control-Allow-Credentials" : true
    },
@@ -81,7 +81,7 @@ try {
 async function _delete (id) {
   const requestOptions = {
     headers: {
-      'invoice-Type': 'application/json',
+      'Content-Type': 'application/json',
       "Access-Control-Allow-Origin" : "*",
       "Access-Control-Allow-Credentials" : true
    },

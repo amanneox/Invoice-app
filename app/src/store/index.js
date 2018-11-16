@@ -5,6 +5,7 @@ import { alert } from './alert.module'
 import { account } from './account.module'
 import { users } from './users.module'
 import { invoice } from './invoice.module'
+import { userinvoice } from './userinvoice.module'
 Vue.use(Vuex)
 
 export const store = new Vuex.Store({
@@ -13,6 +14,7 @@ export const store = new Vuex.Store({
     alert,
     account,
     users,
-    invoice
+    invoice,
+    userinvoice
   }
 })

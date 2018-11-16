@@ -7,7 +7,6 @@ const state = {
 const actions = {
   get_All ({ commit }) {
     commit('get_AllRequest')
-
     userService.get_All()
       .then(
         users => commit('get_AllSuccess', users),
@@ -31,7 +30,7 @@ const mutations = {
     state.all = { loading: true }
   },
   get_AllSuccess (state, users) {
-    state.all = { items: users }
+    state.all = { ...users }
   },
   get_AllFailure (state, error) {
     state.all = { error }

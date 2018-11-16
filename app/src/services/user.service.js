@@ -54,7 +54,7 @@ async function get_All(){
    },
   }
 try {
-  const res = await axios.get(`${config.apiUrl}/user/list`)
+  const res = await axios.get(`${config.apiUrl}/user/`)
   return res.data
 } catch (error) {
     return Promise.reject(error)
