@@ -25,8 +25,11 @@
              </v-flex>
 
             </v-layout>
-            <v-btn icon class="mail-icon" small fab dark color="primary">
-             <v-icon large color="teal darken-2">email</v-icon>
+            <v-btn icon class="download-icon" small fab color="blue">
+             <v-icon class="download-icon-img" large color="white darken-2">cloud_download</v-icon>
+            </v-btn>
+            <v-btn icon class="mail-icon" small fab color="primary">
+             <v-icon class="mail-icon-img" large color="white darken-2">email</v-icon>
             </v-btn>
           </v-container>
         </v-card>
@@ -148,9 +151,18 @@ export default {
   padding: 12px;
   float: left;
 }
+.download-icon{
+  float: left !important;
+}
+.download-icon-img{
+  font-size: 28px !important;
+}
 .mail-icon{
   float: right !important;
-  background: white;
+  background: green !important;
+}
+.mail-icon-img{
+font-size: 28px !important;
 }
  .item {
    margin-bottom: 18px;

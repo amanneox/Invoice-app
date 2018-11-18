@@ -4,20 +4,23 @@
     <list default="true" id="0cb0fe47-e696-45d1-8b76-da17f45d4856" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.gradle/4.8.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.8.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.8.1/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8.1/taskHistory/taskHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.8.1/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8.1/taskHistory/taskHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Java_EE_6_Java_EE_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/javax_mail_api_1_6_2.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/paperless/app/controller/UserInvoiceController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/paperless/app/controller/UserInvoiceController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/paperless/app/model/ItemData.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/paperless/app/model/ItemData.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/paperless/app/model/UserInvoice.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/paperless/app/model/UserInvoice.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/app-0.0.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/app-0.0.1.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/paperless/app/controller/UserInvoiceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/paperless/app/controller/UserInvoiceController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/src/components/LayoutHeader.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../app/src/components/LayoutHeader.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../app/src/router/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/src/services/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../app/src/services/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/src/services/invoice.service.js" beforeDir="false" afterPath="$PROJECT_DIR$/../app/src/services/invoice.service.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/src/store/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../app/src/store/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/paperless/app/PaperlessApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/paperless/app/controller/InvoiceController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/paperless/app/controller/UserController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/paperless/app/controller/UserInvoiceController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/paperless/app/exception/ResourceNotFoundException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/paperless/app/model/AuditModel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/paperless/app/model/InvoiceModel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/paperless/app/model/ItemData.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/paperless/app/model/UserInvoice.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/paperless/app/model/UserModel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/paperless/app/repository/InvoiceRepo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/paperless/app/repository/UserInvoiceRepo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/paperless/app/repository/UserRepo.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -59,31 +62,31 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="gradle" value="5" />
+          <entry key="gradle" value="6" />
           <entry key="gradlew" value="1" />
-          <entry key="java" value="47" />
+          <entry key="java" value="49" />
           <entry key="properties" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Groovy" value="5" />
-          <entry key="JAVA" value="47" />
+          <entry key="Groovy" value="6" />
+          <entry key="JAVA" value="49" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="Properties" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="gradle" value="93" />
-          <entry key="java" value="1741" />
+          <entry key="gradle" value="109" />
+          <entry key="java" value="1784" />
           <entry key="properties" value="80" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Groovy" value="93" />
-          <entry key="JAVA" value="1741" />
+          <entry key="Groovy" value="109" />
+          <entry key="JAVA" value="1784" />
           <entry key="Properties" value="80" />
         </counts>
       </usages-collector>
@@ -92,27 +95,6 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/paperless/app/controller/UserInvoiceController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="406">
-              <caret line="39" column="5" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/paperless/app/repository/UserInvoiceRepo.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="11" column="48" selection-start-line="11" selection-start-column="48" selection-end-line="11" selection-end-column="48" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/paperless/app/model/ItemData.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="136">
@@ -120,6 +102,15 @@
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/paperless/app/repository/UserInvoiceRepo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="11" column="48" selection-start-line="11" selection-start-column="48" selection-end-line="11" selection-end-column="48" />
             </state>
           </provider>
         </entry>
@@ -175,11 +166,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/paperless/app/controller/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="986">
               <caret line="95" column="48" selection-start-line="95" selection-start-column="48" selection-end-line="95" selection-end-column="48" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/build.gradle">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="287">
+              <caret line="33" column="53" selection-start-line="33" selection-start-column="53" selection-end-line="33" selection-end-column="53" />
             </state>
           </provider>
         </entry>
@@ -435,7 +435,7 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="6167795204993" />
+        <entry key="$PROJECT_DIR$" value="6168180250705" />
         <entry key="$PROJECT_DIR$/.gradle" value="0" />
         <entry key="$PROJECT_DIR$/build.gradle" value="4276612373" />
         <entry key="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" value="2077093676" />
@@ -651,7 +651,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/paperless/app/model/MailProperties.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/paperless/app/service/SESService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/paperless/app/PaperlessApplication.java" />
-        <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/main/java/com/paperless/app/controller/UserController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/paperless/app/model/InvoiceModel.java" />
@@ -659,6 +658,8 @@
         <option value="$PROJECT_DIR$/src/main/java/com/paperless/app/model/ItemData.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/paperless/app/model/UserInvoice.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/paperless/app/controller/UserInvoiceController.java" />
+        <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/src/main/java/com/paperless/app/config/SwaggerConfig.java" />
       </list>
     </option>
   </component>
@@ -762,12 +763,12 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542045322253" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/javax.mail-api-1.6.2.jar!/" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542520125226" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/springfox-swagger-ui-2.9.2.jar!/" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Problems" />
-    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.15234375" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="spring.boot" />
   </component>
@@ -814,12 +815,12 @@
       <workItem from="1542108872879" duration="3921000" />
       <workItem from="1542203756443" duration="4015000" />
       <workItem from="1542298003802" duration="4004000" />
-      <workItem from="1542373167398" duration="1196000" />
+      <workItem from="1542373167398" duration="3709000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41699000" />
+    <option name="totallyTimeSpent" value="44212000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -835,7 +836,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3286119" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3286119" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39943343" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -913,13 +914,6 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/paperless/app/service/SendingMailService.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/paperless/app/model/MailProperties.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/paperless/app/service/SESService.java" />
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="31" column="5" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-orm/5.1.2.RELEASE/b98b30ecb2144a9c37a2c44161eded21a91a76c9/spring-orm-5.1.2.RELEASE-sources.jar!/org/springframework/orm/jpa/vendor/SpringHibernateJpaPersistenceProvider.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="429">
@@ -934,13 +928,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/paperless/app/repository/UserInvoiceRepo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="11" column="48" selection-start-line="11" selection-start-column="48" selection-end-line="11" selection-end-column="48" />
         </state>
       </provider>
     </entry>
@@ -1006,6 +993,27 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="986">
           <caret line="95" column="48" selection-start-line="95" selection-start-column="48" selection-end-line="95" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/paperless/app/config/SwaggerConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="31" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="287">
+          <caret line="33" column="53" selection-start-line="33" selection-start-column="53" selection-end-line="33" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/paperless/app/repository/UserInvoiceRepo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="11" column="48" selection-start-line="11" selection-start-column="48" selection-end-line="11" selection-end-column="48" />
         </state>
       </provider>
     </entry>
@@ -1084,7 +1092,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>javax.mail-api-1.6.2</last-edited>
+          <last-edited>Gradle: antlr:antlr:2.7.7</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
