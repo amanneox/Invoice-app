@@ -25,7 +25,7 @@
              </v-flex>
 
             </v-layout>
-            <v-btn icon class="download-icon" small fab color="blue">
+            <v-btn @click.prevent="$_download(i.id)" icon class="download-icon" small fab color="blue">
              <v-icon class="download-icon-img" large color="white darken-2">cloud_download</v-icon>
             </v-btn>
             <v-btn icon class="mail-icon" small fab color="primary">
@@ -76,11 +76,14 @@ export default {
     $_remove (id) {
       this._delete(id)
     },
+    $_download(id){
+      this.download(id)
+    },
     $_submit () {
       const userinvoice = this.form
       this.create(userinvoice)
     },
-    ...mapActions('userinvoice', ['create', 'get_All_userinvoice', '_delete'])
+    ...mapActions('userinvoice', ['create', 'get_All_userinvoice', '_delete','download'])
   },
   mounted () {
     this.get_All_userinvoice()

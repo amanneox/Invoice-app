@@ -1,5 +1,4 @@
 import { userinvoiceService } from '../services'
-
 const state = {
   items: {},
   request: {},
@@ -27,6 +26,17 @@ const actions = {
         error => commit('get_AllFailure', error)
       )
   },
+
+  download ({commit}, id) {
+    userinvoiceService.download(id)
+      .then(
+        current => {
+          console.log(current)
+        },
+        error => commit('get_AllFailure', error)
+      )
+  },
+
   create ({commit}, payload) {
     commit('createRequest')
     userinvoiceService.create(payload)

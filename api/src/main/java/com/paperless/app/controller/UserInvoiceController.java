@@ -4,6 +4,7 @@ import com.paperless.app.exception.ResourceNotFoundException;
 import com.paperless.app.model.UserInvoice;
 import com.paperless.app.repository.InvoiceRepo;
 import com.paperless.app.repository.UserInvoiceRepo;
+import com.paperless.app.service.DocumentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -16,6 +17,8 @@ import javax.validation.Valid;
 @CrossOrigin(origins = "*", allowedHeaders = "*")
 public class UserInvoiceController {
 
+    @Autowired
+    protected DocumentService documentService;
     @Autowired
     protected UserInvoiceRepo userInvoiceRepo;
     @Autowired
@@ -42,6 +45,7 @@ public class UserInvoiceController {
     public UserInvoice createUserInvoice(@Valid @PathVariable Long invoiceId, @RequestBody UserInvoice invoice) {
 
         return invoiceRepo.findById(invoiceId).map(data -> {
+            documentService.createPDF(data,invoice);
             invoice.setData(data);
             return userInvoiceRepo.save(invoice);
         }).orElseThrow(() -> new ResourceNotFoundException("InvoiceId " + invoiceId + " not found"));

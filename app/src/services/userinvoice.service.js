@@ -8,7 +8,8 @@ export const userinvoiceService = {
   getById,
   update,
   _delete,
-  create
+  create,
+  download
 }
 async function get_All_userinvoice () {
   const requestOptions = {
@@ -42,6 +43,23 @@ try {
     return Promise.reject(error)
 }
   }
+
+
+  async function download (id) {
+    const requestOptions = {
+      headers: {
+        'Content-Type': 'application/json',
+        "Access-Control-Allow-Origin" : "*",
+        "Access-Control-Allow-Credentials" : true
+     },
+    }
+  try {
+  //  const res = await axios.get(`${config.apiUrl}/user/invoice/download/${id}`)
+    return id
+  } catch (error) {
+      return Promise.reject(error)
+  }
+    }
 
 async function update (invoice) {
 
