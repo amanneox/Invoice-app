@@ -48,14 +48,44 @@ public class DocumentService {
             contentStream.newLineAtOffset(0, -leading);
             contentStream.showText(String.valueOf(data.getNumber()));
 
-            contentStream.newLineAtOffset(0, -leading);
+            contentStream.endText();
+
+            contentStream.moveTo(startX,startY-4*leading);
+            contentStream.lineTo(endX,startY-4*leading);
+            contentStream.stroke();
+
+            contentStream.beginText();
+            contentStream.newLineAtOffset(startX, startY-5*leading);
             contentStream.showText("Customer Name:"+String.valueOf(invoice.getUser_name()));
 
-            contentStream.newLineAtOffset(0,-leading);
-            //contentStream.showText(String.valueOf(invoice.getItems()));
+            contentStream.newLineAtOffset(0, -leading);
+            contentStream.showText("Invoice Date:"+String.valueOf(data.getCreatedAt()));
+
+            contentStream.newLineAtOffset(0, -leading);
+            contentStream.showText("Total Items:"+String.valueOf(invoice.getItems().size()));
+
+            contentStream.newLineAtOffset(0, -leading);
+            contentStream.showText("Total Amount:"+String.valueOf(invoice.getTotal_value()));
 
             contentStream.endText();
-            contentStream.setLineDashPattern(new float[]{0}, 0);
+
+            contentStream.beginText();
+            contentStream.newLineAtOffset(startX,startY-11*leading);
+            contentStream.showText("Items Ordered");
+
+            for (int i = 0;i<invoice.getItems().size();++i){
+                contentStream.newLineAtOffset(0, -leading);
+                contentStream.showText("("+(i+1)+")"+"Item Name:"+invoice.getItems().get(i).getName());
+                contentStream.newLineAtOffset(0, -leading);
+                contentStream.showText("Item Price:"+invoice.getItems().get(i).getPrice());
+                contentStream.newLineAtOffset(0, -leading);
+                contentStream.showText("Item Description:"+invoice.getItems().get(i).getDesc());
+                contentStream.newLineAtOffset(0, -leading);
+            }
+            contentStream.setFont(PDType1Font.TIMES_BOLD, 12);
+            contentStream.newLineAtOffset(0, -leading);
+            contentStream.showText("Terms:"+data.getTerms());
+            contentStream.endText();
             contentStream.close();
             doc.save(new File("new.pdf"));
             doc.close();

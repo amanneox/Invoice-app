@@ -2,7 +2,6 @@ package com.paperless.app.model;
 import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Size;
-import java.util.Date;
 
 @Entity
 @Table(name = "invoice_template")
@@ -52,18 +51,8 @@ public class InvoiceModel extends AuditModel {
         return logo;
     }
 
-    @Override
-    public Date getCreatedAt() {
-        return super.getCreatedAt();
-    }
-
     public String getAddress() {
         return address;
-    }
-
-    @Override
-    public Date getUpdatedAt() {
-        return super.getUpdatedAt();
     }
 
     public String getCname() {
@@ -90,10 +79,7 @@ public class InvoiceModel extends AuditModel {
         this.address = address;
     }
 
-    @Override
-    public void setCreatedAt(Date createdAt) {
-        super.setCreatedAt(createdAt);
-    }
+
 
     public void setCname(String cname) {
         this.cname = cname;
@@ -103,10 +89,7 @@ public class InvoiceModel extends AuditModel {
         this.logo = logo;
     }
 
-    @Override
-    public void setUpdatedAt(Date updatedAt) {
-        super.setUpdatedAt(updatedAt);
-    }
+
 
     public void setNumber(int number) {
         this.number = number;

@@ -39,6 +39,16 @@ public class UserInvoice extends AuditModel {
 
     private Long total_value;
 
+    private String invoice_url;
+
+    public String getInvoice_url() {
+        return invoice_url;
+    }
+
+    public void setInvoice_url(String invoice_url) {
+        this.invoice_url = invoice_url;
+    }
+
     public InvoiceModel getData() {
         return data;
     }
@@ -72,4 +82,5 @@ public class UserInvoice extends AuditModel {
     public void setUser_name(String user_name) {
         this.user_name = user_name;
     }
+
 }
