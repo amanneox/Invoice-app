@@ -5,6 +5,8 @@ import com.paperless.app.model.UserInvoice;
 import com.paperless.app.repository.InvoiceRepo;
 import com.paperless.app.repository.UserInvoiceRepo;
 import com.paperless.app.service.DocumentService;
+import com.paperless.app.service.S3Service;
+import org.apache.pdfbox.pdmodel.PDDocument;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -17,6 +19,8 @@ import javax.validation.Valid;
 @CrossOrigin(origins = "*", allowedHeaders = "*")
 public class UserInvoiceController {
 
+    @Autowired
+    protected S3Service s3Service;
     @Autowired
     protected DocumentService documentService;
     @Autowired
@@ -46,7 +50,9 @@ public class UserInvoiceController {
 
         return invoiceRepo.findById(invoiceId).map(data -> {
 
-            documentService.createPDF(data,invoice);
+            PDDocument doc = documentService.createPDF(data,invoice);
+            String url = s3Service.uploadFile(doc);
+            invoice.setInvoice_url(url);
             invoice.setData(data);
             return userInvoiceRepo.save(invoice);
         }).orElseThrow(() -> new ResourceNotFoundException("InvoiceId " + invoiceId + " not found"));

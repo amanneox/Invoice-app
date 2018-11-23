@@ -4,7 +4,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 
-@SpringBootApplication(scanBasePackages={"com.paperless.app.repository", "com.paperless.app.controller","com.paperless.app.service"}
+@SpringBootApplication(scanBasePackages={"com.paperless.app.repository", "com.paperless.app.controller","com.paperless.app.service","com.paperless.app.config"}
 )
 @EnableJpaAuditing
 public class PaperlessApplication {

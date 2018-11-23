@@ -1,0 +1,33 @@
+{
+  "properties": [
+    {
+      "name": "cloud.aws.region.static",
+      "type": "java.lang.String",
+      "description": "Description for cloud.aws.region.static."
+    },
+    {
+      "name": "cloud.aws.credentials.instanceProfile",
+      "type": "java.lang.String",
+      "description": "Description for cloud.aws.credentials.instanceProfile."
+    },
+    {
+      "name": "cloud.aws.credentials.accessKey",
+      "type": "java.lang.String",
+      "description": "Description for cloud.aws.credentials.accessKey."
+    },
+    {
+      "name": "cloud.aws.credentials.secretKey",
+      "type": "java.lang.String",
+      "description": "Description for cloud.aws.credentials.secretKey."
+    },
+    {
+      "name": "cloud.aws.bucket",
+      "type": "java.lang.String",
+      "description": "Description for cloud.aws.bucket."
+    },
+    {
+      "name": "cloud.aws.bucket.baseurl",
+      "type": "java.lang.String",
+      "description": "Description for cloud.aws.bucket.baseurl."
+    }
+  ] }

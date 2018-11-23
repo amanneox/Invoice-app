@@ -10,12 +10,11 @@ import org.apache.pdfbox.pdmodel.common.PDRectangle;
 import org.apache.pdfbox.pdmodel.font.PDType1Font;
 import org.springframework.stereotype.Service;
 
-import java.io.File;
 import java.io.IOException;
 
 @Service
 public class DocumentService {
-    public   void createPDF(InvoiceModel data, UserInvoice invoice){
+    public PDDocument createPDF(InvoiceModel data, UserInvoice invoice){
         PDDocument doc = new PDDocument();
         PDPage blankPage = new PDPage(PDRectangle.A4);
         doc.addPage( blankPage );
@@ -87,10 +86,11 @@ public class DocumentService {
             contentStream.showText("Terms:"+data.getTerms());
             contentStream.endText();
             contentStream.close();
-            doc.save(new File("new.pdf"));
-            doc.close();
+         //   doc.save(new File("new.pdf"));
+          //  doc.close();
         } catch (IOException e) {
             e.printStackTrace();
         }
+        return doc;
     }
 }
