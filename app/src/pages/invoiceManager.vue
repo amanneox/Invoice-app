@@ -25,9 +25,11 @@
              </v-flex>
 
             </v-layout>
-            <v-btn @click.prevent="$_download(i.id)" icon class="download-icon" small fab color="blue">
-             <v-icon class="download-icon-img" large color="white darken-2">cloud_download</v-icon>
-            </v-btn>
+            <router-link :to="`${i.invoice_url}`" target="_blank">
+              <v-btn icon class="download-icon" small fab color="blue">
+               <v-icon class="download-icon-img" large color="white darken-2">cloud_download</v-icon>
+              </v-btn>
+            </router-link>
             <v-btn icon class="mail-icon" small fab color="primary">
              <v-icon class="mail-icon-img" large color="white darken-2">email</v-icon>
             </v-btn>
