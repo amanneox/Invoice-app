@@ -3,5 +3,9 @@
 .elasticbeanstalk/*
 !.elasticbeanstalk/*.cfg.yml
 !.elasticbeanstalk/*.global.yml
-
-.src\main\resources\application.properties
+build/resources/main/static/
+build/resources/main/templates/
+build/tmp/compileJava/
+src/main/resources/static/
+src/main/resources/templates/
+/src/main/resources/application.properties
