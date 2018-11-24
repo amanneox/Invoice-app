@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
 import java.util.Optional;
+import java.util.UUID;
 
 @RestController
 @CrossOrigin(origins = "*", allowedHeaders = "*")
@@ -30,6 +31,7 @@ public class InvoiceController {
     }
     @PostMapping("/invoice")
     public InvoiceModel createInvoice(@Valid @RequestBody InvoiceModel invoice) {
+        invoice.setName(UUID.randomUUID().toString());
         return invoiceRepo.save(invoice);
     }
 
@@ -53,7 +55,7 @@ public class InvoiceController {
         return invoiceRepo.findById(invoiceId)
                 .map(invoice -> {
                     invoiceRepo.delete(invoice);
-                    return ResponseEntity.ok().build();
+                    return ResponseEntity.ok().body("OK");
                 }).orElseThrow(() -> new ResourceNotFoundException("Invoice not found with id " + invoiceId));
     }
 }

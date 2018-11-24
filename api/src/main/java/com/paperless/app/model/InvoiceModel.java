@@ -10,8 +10,6 @@ public class InvoiceModel extends AuditModel {
     @GeneratedValue(strategy=GenerationType.AUTO)
     private Long id;
 
-
-    @GeneratedValue(strategy=GenerationType.IDENTITY)
     @Size(min = 3, max = 100)
     private String name;
 

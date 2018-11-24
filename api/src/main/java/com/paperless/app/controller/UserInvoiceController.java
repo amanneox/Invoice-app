@@ -42,7 +42,7 @@ public class UserInvoiceController {
         return userInvoiceRepo.findById(invoiceId)
                 .map(invoice -> {
                     userInvoiceRepo.delete(invoice);
-                    return ResponseEntity.ok().build();
+                    return ResponseEntity.ok().body("OK");
                 }).orElseThrow(() -> new ResourceNotFoundException("Invoice not found with id " + invoiceId));
     }
     @PostMapping("/user/invoice/{invoiceId}")
