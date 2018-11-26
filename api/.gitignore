@@ -9,3 +9,11 @@ build/tmp/compileJava/
 src/main/resources/static/
 src/main/resources/templates/
 /src/main/resources/application.properties
+/src/main/resources/AwsCredentials.properties
+.idea/caches/
+out/production/classes/com/paperless/app/config/SESConfig.class
+out/production/classes/com/paperless/app/model/AmazonAttachment.class
+out/production/classes/com/paperless/app/model/AmazonEmail.class
+out/production/classes/com/paperless/app/model/SESFrom.class
+out/production/classes/com/paperless/app/service/SESProcessor.class
+out/production/classes/com/paperless/app/service/SESWorker.class

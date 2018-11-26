@@ -1,11 +1,13 @@
 package com.paperless.app.controller;
 
 import com.paperless.app.exception.ResourceNotFoundException;
+import com.paperless.app.model.AmazonEmail;
 import com.paperless.app.model.UserInvoice;
 import com.paperless.app.repository.InvoiceRepo;
 import com.paperless.app.repository.UserInvoiceRepo;
 import com.paperless.app.service.DocumentService;
 import com.paperless.app.service.S3Service;
+import com.paperless.app.service.SESProcessor;
 import org.apache.pdfbox.pdmodel.PDDocument;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -18,6 +20,9 @@ import javax.validation.Valid;
 @RestController
 @CrossOrigin(origins = "*", allowedHeaders = "*")
 public class UserInvoiceController {
+
+    @Autowired
+    protected SESProcessor sesProcessor;
 
     @Autowired
     protected S3Service s3Service;
@@ -54,6 +59,10 @@ public class UserInvoiceController {
             String url = s3Service.uploadFile(doc);
             invoice.setInvoice_url(url);
             invoice.setData(data);
+            SESProcessor.getInstance().add(new AmazonEmail(
+                    "amanadhikari2@gmail.com",
+                    "Hey Aman",
+                    "Invoice Created :)"));
             return userInvoiceRepo.save(invoice);
         }).orElseThrow(() -> new ResourceNotFoundException("InvoiceId " + invoiceId + " not found"));
     }
