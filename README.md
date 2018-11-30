@@ -11,9 +11,9 @@ Create a invoice template to get started , then simply send a restful post to ge
 List all the invoice templates created so far.
 
 + Response 200 (application/json)
-    {
 
-    "content": [
+
+    "content": 
         {
             "createdAt": "2018-11-24T13:18:31.377+0000",
             "updatedAt": "2018-11-24T13:18:31.377+0000",
@@ -26,8 +26,8 @@ List all the invoice templates created so far.
             "email": "help@google.com",
             "terms": "No Terms"
         }
-    ]
-  }
+
+
 
 
 ### Create a New Invoice Template [POST]
