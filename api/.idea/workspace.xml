@@ -2,21 +2,160 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="46b6e054-d66d-4b8e-9141-dc19b763ed78" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/4.8.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.8.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/paperless/app/controller/UserInvoiceController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/paperless/app/controller/UserInvoiceController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/paperless/app/model/UserInvoice.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/paperless/app/model/UserInvoice.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/AwsCredentials.properties" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/AwsCredentials.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/com/paperless/app/PaperlessApplicationTests.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/paperless/app/controller/UserInvoiceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/paperless/app/controller/UserInvoiceController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/paperless/app/model/AmazonEmail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/paperless/app/model/AmazonEmail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/paperless/app/model/SESFrom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/paperless/app/model/SESFrom.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/paperless/app/model/UserInvoice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/paperless/app/model/UserInvoice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/paperless/app/service/DocumentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/paperless/app/service/DocumentService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/paperless/app/service/SESWorker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/paperless/app/service/SESWorker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.8.1/fileChanges/last-build.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.8.1/fileContent/annotation-processors.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.8.1/fileContent/fileContent.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.8.1/fileHashes/fileHashes.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.8.1/fileHashes/fileHashes.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.8.1/fileHashes/resourceHashesCache.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.8.1/taskHistory/taskHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.8.1/taskHistory/taskHistory.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/vcsWorkingDirs/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/workspace-id.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/workspace-id.txt.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/META-INF/spring-configuration-metadata.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/paperless/app/PaperlessApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/paperless/app/config/S3Config.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/paperless/app/controller/InvoiceController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/paperless/app/controller/UserController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/paperless/app/controller/UserInvoiceController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/paperless/app/exception/ResourceNotFoundException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/paperless/app/model/AuditModel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/paperless/app/model/InvoiceModel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/paperless/app/model/ItemData.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/paperless/app/model/UserInvoice.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/paperless/app/model/UserModel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/paperless/app/repository/InvoiceRepo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/paperless/app/repository/UserInvoiceRepo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/paperless/app/repository/UserRepo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/paperless/app/service/DocumentService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/paperless/app/service/S3Service.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/app-0.0.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/META-INF/additional-spring-configuration-metadata.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/bootJar/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/aws-java-sdk-1.11.455.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/javax.ejb.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/javax.jms.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/javax.resource.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/javax.servlet.jsp.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/javax.servlet.jsp.jstl.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/local.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/paperless/app/PaperlessApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/paperless/app/config/S3Config.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/paperless/app/controller/InvoiceController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/paperless/app/controller/UserController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/paperless/app/controller/UserInvoiceController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/paperless/app/exception/ResourceNotFoundException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/paperless/app/model/AuditModel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/paperless/app/model/InvoiceModel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/paperless/app/model/ItemData.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/paperless/app/model/UserInvoice.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/paperless/app/model/UserModel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/paperless/app/repository/InvoiceRepo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/paperless/app/repository/UserInvoiceRepo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/paperless/app/repository/UserRepo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/paperless/app/service/DocumentService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/paperless/app/service/S3Service.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/AwsCredentials.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/META-INF/additional-spring-configuration-metadata.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/paperless/app/PaperlessApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/paperless/app/config/S3Config.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/paperless/app/controller/InvoiceController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/paperless/app/controller/UserController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/paperless/app/controller/UserInvoiceController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/paperless/app/exception/ResourceNotFoundException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/paperless/app/model/AmazonAttachment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/paperless/app/model/AmazonEmail.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/paperless/app/model/AuditModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/paperless/app/model/InvoiceModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/paperless/app/model/ItemData.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/paperless/app/model/SESFrom.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/paperless/app/model/UserInvoice.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/paperless/app/model/UserModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/paperless/app/repository/InvoiceRepo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/paperless/app/repository/UserInvoiceRepo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/paperless/app/repository/UserRepo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/paperless/app/service/DocumentService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/paperless/app/service/S3Service.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/paperless/app/service/SESProcessor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/paperless/app/service/SESWorker.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/additional-spring-configuration-metadata.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/paperless/app/PaperlessApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/.babelrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/.eslintignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/.eslintrc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/.postcssrc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/build/build.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/build/check-versions.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/build/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/build/utils.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/build/vue-loader.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/build/webpack.base.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/build/webpack.dev.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/build/webpack.prod.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/config/dev.env.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/config/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/config/prod.env.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/config/test.env.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/src/App.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/src/assets/1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/src/assets/ic_logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/src/assets/ic_logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/src/assets/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/src/components/Brand.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/src/components/Footer.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/src/components/HelloWorld.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/src/components/LayoutHeader.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/src/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/src/pages/_invoice.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/src/pages/home.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/src/pages/invoiceBuilder.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/src/pages/invoiceManager.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/src/pages/login.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/src/pages/signUp.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/src/router/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/src/services/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/src/services/invoice.service.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/src/services/user.service.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/src/services/userinvoice.service.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/src/store/account.module.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/src/store/alert.module.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/src/store/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/src/store/invoice.module.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/src/store/userinvoice.module.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/src/store/users.module.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/static/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/test/e2e/custom-assertions/elementCount.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/test/e2e/nightwatch.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/test/e2e/runner.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/test/e2e/specs/test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/test/unit/.eslintrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/test/unit/jest.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/test/unit/setup.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/test/unit/specs/HelloWorld.spec.js" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -51,13 +190,14 @@
           <entry key="project.open.time.61" value="1" />
           <entry key="project.open.time.78" value="1" />
           <entry key="project.open.time.85" value="1" />
-          <entry key="project.opened" value="6" />
+          <entry key="project.open.time.86" value="1" />
+          <entry key="project.opened" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="MF" value="1" />
-          <entry key="gitignore" value="5" />
+          <entry key="gitignore" value="6" />
           <entry key="gradle" value="8" />
           <entry key="java" value="49" />
           <entry key="json" value="4" />
@@ -68,7 +208,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Git file" value="4" />
+          <entry key="Git file" value="5" />
           <entry key="Groovy" value="8" />
           <entry key="JAVA" value="49" />
           <entry key="JSON" value="4" />
@@ -102,7 +242,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/paperless/app/model/AmazonAttachment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
+            <state relative-caret-position="289">
               <caret line="18" column="20" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
               <folding>
                 <element signature="e#404#405#0" expanded="true" />
@@ -122,11 +262,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/paperless/app/service/DocumentService.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="389">
               <caret line="58" selection-start-line="58" selection-end-line="58" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="13" column="63" selection-start-line="13" selection-start-column="63" selection-end-line="13" selection-end-column="63" />
             </state>
           </provider>
         </entry>
@@ -143,7 +292,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="338">
+            <state relative-caret-position="680">
               <caret line="40" selection-start-line="40" selection-end-line="40" />
             </state>
           </provider>
@@ -643,7 +792,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/paperless/app/config/SESConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/paperless/app/service/S3Service.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/paperless/app/config/S3Config.java" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/paperless/app/model/SESFrom.java" />
         <option value="$PROJECT_DIR$/src/main/resources/AwsCredentials.properties" />
@@ -654,6 +802,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/paperless/app/model/UserInvoice.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/paperless/app/controller/UserInvoiceController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/paperless/app/service/DocumentService.java" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -673,6 +822,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -745,7 +895,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -756,7 +905,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="add_unversioned_files" value="true&#10;E:/Java Project/api/src/main/resources/AwsCredentials.properties" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543409639527" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543554764836" />
     <property name="last_opened_file_path" value="$USER_HOME$/Downloads/mail-1.5.0-b01.jar!/" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -802,17 +951,18 @@
       <workItem from="1543221220909" duration="12253000" />
       <workItem from="1543313717138" duration="8779000" />
       <workItem from="1543408467176" duration="1409000" />
+      <workItem from="1543554622099" duration="134000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48914000" />
+    <option name="totallyTimeSpent" value="49048000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2671141" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27114093" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -922,13 +1072,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/paperless/app/config/SESConfig.java" />
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -978,10 +1121,45 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/paperless/app/controller/UserInvoiceController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="498">
+          <caret line="88" selection-start-line="88" selection-end-line="88" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/paperless/app/model/AmazonAttachment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="18" column="20" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
+          <folding>
+            <element signature="e#404#405#0" expanded="true" />
+            <element signature="e#431#432#0" expanded="true" />
+            <element signature="e#471#472#0" expanded="true" />
+            <element signature="e#503#504#0" expanded="true" />
+            <element signature="e#537#538#0" expanded="true" />
+            <element signature="e#567#568#0" expanded="true" />
+            <element signature="e#613#614#0" expanded="true" />
+            <element signature="e#651#652#0" expanded="true" />
+            <element signature="e#689#690#0" expanded="true" />
+            <element signature="e#723#724#0" expanded="true" />
+            <element signature="e#777#778#0" expanded="true" />
+            <element signature="e#823#824#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/paperless/app/service/SESWorker.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="19" column="24" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="40" selection-start-line="40" selection-end-line="40" />
         </state>
       </provider>
     </entry>
@@ -1003,45 +1181,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="40" selection-start-line="40" selection-end-line="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/paperless/app/controller/UserInvoiceController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="498">
-          <caret line="88" selection-start-line="88" selection-end-line="88" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/paperless/app/model/AmazonAttachment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="18" column="20" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
-          <folding>
-            <element signature="e#404#405#0" expanded="true" />
-            <element signature="e#431#432#0" expanded="true" />
-            <element signature="e#471#472#0" expanded="true" />
-            <element signature="e#503#504#0" expanded="true" />
-            <element signature="e#537#538#0" expanded="true" />
-            <element signature="e#567#568#0" expanded="true" />
-            <element signature="e#613#614#0" expanded="true" />
-            <element signature="e#651#652#0" expanded="true" />
-            <element signature="e#689#690#0" expanded="true" />
-            <element signature="e#723#724#0" expanded="true" />
-            <element signature="e#777#778#0" expanded="true" />
-            <element signature="e#823#824#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/paperless/app/service/DocumentService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="389">
           <caret line="58" selection-start-line="58" selection-end-line="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="63" selection-start-line="13" selection-start-column="63" selection-end-line="13" selection-end-column="63" />
         </state>
       </provider>
     </entry>
