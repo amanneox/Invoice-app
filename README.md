@@ -1,5 +1,18 @@
 HOST: http://paperless-dev.ap-south-1.elasticbeanstalk.com/
 
+## Technology Used
+
+### Amazon SES - simple email service
+
+### Amazon S3 - storing invoices
+
+### EBS - server deployed on elastic Beanstalk
+
+## Frameworks Used
+
+### Apache PDFBox
+### Javax mail 
+
 # Paperless
 
 Paperless is a simple API allowing users to create invoice , download and mail them.
@@ -119,8 +132,10 @@ object containing a invoice info.
 List all the user invoice templates created so far.
 
 + Response 200 (application/json)
-{
-    "content": [
+
+```
+content[]
+```
        {
             "createdAt": "2018-11-24T13:46:28.648+0000",
             "updatedAt": "2018-11-24T13:46:28.648+0000",
@@ -146,8 +161,7 @@ List all the user invoice templates created so far.
                 }
             ]
         }
-    ]
-  }
+
 ## Create User Invoice Template [/user/invoice/{invoiceid}]
 ### Create a New User Invoice Template [POST]
 
