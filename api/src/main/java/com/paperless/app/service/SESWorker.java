@@ -25,7 +25,6 @@ import java.text.SimpleDateFormat;
 import java.util.*;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-
 public class SESWorker extends Thread {
 
     private static final Logger LOG = Logger.getLogger(SESWorker.class.getName());
@@ -161,8 +160,8 @@ public class SESWorker extends Thread {
 
                         //set message contents
                         message.setContent(mp);
-
                         // Send the email.
+
                         ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
                         message.writeTo(outputStream);
                         RawMessage rawMessage = new RawMessage(ByteBuffer.wrap(outputStream.toByteArray()));

@@ -126,6 +126,21 @@ public class AmazonEmail {
         this.bcc = new ArrayList<>();
     }
 
+    public AmazonEmail(String to, SESFrom from, String subject, String body, boolean html, AmazonAttachment file) {
+        this.to = new ArrayList<>();
+        this.to.add(to);
+        this.from = from;
+        this.subject = subject;
+        this.body = body;
+        this.html = html;
+        this.files = new ArrayList<>();
+        this.files.add(file);
+        this.cc = new ArrayList<>();
+        this.bcc = new ArrayList<>();
+    }
+
+
+
     public List<String> getTo() {
         return to;
     }

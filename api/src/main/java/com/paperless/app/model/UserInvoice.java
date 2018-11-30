@@ -19,6 +19,8 @@ public class UserInvoice extends AuditModel {
     @Size(min = 3, max = 100)
     private String user_name;
 
+    private String email;
+
     @ElementCollection
     @JsonProperty("items")
     private List<ItemData> items;
@@ -61,6 +63,13 @@ public class UserInvoice extends AuditModel {
         return id;
     }
 
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
 
     public Long getTotal_value() {
         return total_value;

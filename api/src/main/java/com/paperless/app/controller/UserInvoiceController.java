@@ -1,7 +1,9 @@
 package com.paperless.app.controller;
 
 import com.paperless.app.exception.ResourceNotFoundException;
+import com.paperless.app.model.AmazonAttachment;
 import com.paperless.app.model.AmazonEmail;
+import com.paperless.app.model.SESFrom;
 import com.paperless.app.model.UserInvoice;
 import com.paperless.app.repository.InvoiceRepo;
 import com.paperless.app.repository.UserInvoiceRepo;
@@ -16,6 +18,10 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
+import java.io.ByteArrayInputStream;
+import java.io.ByteArrayOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
 
 @RestController
 @CrossOrigin(origins = "*", allowedHeaders = "*")
@@ -56,13 +62,42 @@ public class UserInvoiceController {
         return invoiceRepo.findById(invoiceId).map(data -> {
 
             PDDocument doc = documentService.createPDF(data,invoice);
+            ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
+            try {
+                doc.save(byteArrayOutputStream);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+            InputStream inputStream = new ByteArrayInputStream(byteArrayOutputStream.toByteArray());
             String url = s3Service.uploadFile(doc);
             invoice.setInvoice_url(url);
             invoice.setData(data);
+
+
+            if (invoice.getEmail()!=null){
+                AmazonAttachment file = new AmazonAttachment("Invoice",byteArrayOutputStream.toByteArray(),"application/pdf");
+
+                SESProcessor.getInstance().add(new AmazonEmail(
+                        invoice.getEmail(),
+                        SESFrom.ATTA,
+                        data.getCname()+" Invoice",
+                        "Your Invoice Is ready to download",
+                        false,
+                        file
+                ));
+            }
+
+
+
+
+            /*
             SESProcessor.getInstance().add(new AmazonEmail(
                     "amanadhikari2@gmail.com",
+                    SESFrom.NO_REPLY,
                     "Hey Aman",
-                    "Invoice Created :)"));
+                    "Invoice Created :)"
+            ));
+            */
             return userInvoiceRepo.save(invoice);
         }).orElseThrow(() -> new ResourceNotFoundException("InvoiceId " + invoiceId + " not found"));
     }

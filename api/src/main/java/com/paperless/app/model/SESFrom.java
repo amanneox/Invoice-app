@@ -1,7 +1,8 @@
 package com.paperless.app.model;
- public enum SESFrom {
 
-    ATTA("atta@mysestest.com", "Atta from My SES Test"),
+public enum SESFrom {
+
+    ATTA("amanadhikari2@gmail.com", "Atta from My SES Test"),
     NO_REPLY("amanadhikari2@gmail.com", "My SES Test"),
     SUPPORT("support@mysestest.com", "My SES Support Support");
 
