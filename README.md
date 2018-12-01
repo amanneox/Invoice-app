@@ -19,6 +19,35 @@ HOST: http://paperless-dev.ap-south-1.elasticbeanstalk.com/
 Paperless is a simple API allowing users to create invoice , download and mail them.
 Create a invoice template to get started , then simply send a restful post to generate a user invoice.
 
+# Installation
+
+Create a file application.properties in api\src\main\resources with following information
+
+## Local DB Settings
+
+spring.datasource.url= jdbc:postgresql://localhost:5432/test  
+spring.datasource.username=postgres
+spring.datasource.password=amanneox
+spring.jpa.hibernate.ddl-auto=create-drop
+spring.jpa.properties.hibernate.dialect = org.hibernate.dialect.PostgreSQLDialect
+spring.jpa.properties.hibernate.jdbc.lob.non_contextual_creation=true
+server.port=${PORT:8080}
+
+## Set AWS Config using your bucket-name and bucket-url
+
+cloud.aws.region.static=ap-south-1
+cloud.aws.bucket = paperless-invoices
+cloud.aws.bucket.baseurl=https://s3.ap-south-1.amazonaws.com/paperless-invoices/
+
+## AwsCredentials File
+
+Create a file AwsCredentials.properties api\src\main\resources with following information
+
+accessKey=XXXXXXXXXXXX
+secretKey=XXXXXXXXXXXXXXXX
+
+>Keep this files in .gitignore
+
 ## Invoice Template  [/invoice]
 
 ### List All Invoice Template [GET]
