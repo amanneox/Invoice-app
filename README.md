@@ -200,31 +200,34 @@ This is where the magic happens just post the user invoice details and the API w
             Location: /user/invoice/
 
     + Body
-{
-            "createdAt": "2018-11-24T13:55:41.821+0000",
-            "updatedAt": "2018-11-24T13:55:41.821+0000",
-            "id": 4,
-            "invoice_url": "https://s3.ap-south-1.amazonaws.com/paperless-invoices/f509d89e-040b-487d-951f-0cc704c016d8.pdf",
-            "user_name": "Aman Adhikari",
-            "total_value":999,
-            "items": [
-        {
-            "name": "IPHONE X",
-            "price": "999",
-            "desc": "Amazing Product"
-        },
-        {
-            "name": "IPHONE X Max",
-            "price": "1200",
-            "desc": "Amazing Product"
-        },
-        {
-            "name": "IPHONE X +",
-            "price": "1050",
-            "desc": "Amazing Product"
-        }
-      ]
-}
+    ```
+    content[]
+    ```
+           {
+                "createdAt": "2018-11-24T13:46:28.648+0000",
+                "updatedAt": "2018-11-24T13:46:28.648+0000",
+                "id": 3,
+                "user_name": "Aman Adhikari",
+                "total_value": 999,
+                "invoice_url": "https://s3.ap-south-1.amazonaws.com/paperless-invoices/a9c22fc2-4517-452f-a576-7a7f2029067b.pdf",
+                "items": [
+                    {
+                        "name": "IPHONE X",
+                        "desc": "Amazing Product",
+                        "price": 999
+                    },
+                    {
+                        "name": "IPHONE X Max",
+                        "desc": "Amazing Product",
+                        "price": 1200
+                    },
+                    {
+                        "name": "IPHONE X +",
+                        "desc": "Amazing Product",
+                        "price": 1050
+                    }
+                ]
+            }
 ## User Invoice Template Delete  [/user/invoice/delete/{invoiceId}]            
 ### Delete a User Invoice Template [POST]
 
