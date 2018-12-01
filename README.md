@@ -26,18 +26,26 @@ Create a file application.properties in api\src\main\resources with following in
 ## Local DB Settings
 
 spring.datasource.url= jdbc:postgresql://localhost:5432/test  
+
 spring.datasource.username=postgres
+
 spring.datasource.password=amanneox
+
 spring.jpa.hibernate.ddl-auto=create-drop
+
 spring.jpa.properties.hibernate.dialect = org.hibernate.dialect.PostgreSQLDialect
+
 spring.jpa.properties.hibernate.jdbc.lob.non_contextual_creation=true
+
 server.port=${PORT:8080}
 
 ## Set AWS Config using your bucket-name and bucket-url
 
-cloud.aws.region.static=ap-south-1
+cloud.aws.region.static = ap-south-1
+
 cloud.aws.bucket = paperless-invoices
-cloud.aws.bucket.baseurl=https://s3.ap-south-1.amazonaws.com/paperless-invoices/
+
+cloud.aws.bucket.baseurl = https://s3.ap-south-1.amazonaws.com/paperless-invoices/
 
 ## AwsCredentials File
 
@@ -46,7 +54,7 @@ Create a file AwsCredentials.properties api\src\main\resources with following in
 accessKey=XXXXXXXXXXXX
 secretKey=XXXXXXXXXXXXXXXX
 
->Keep this files in .gitignore
+>Keep these files in .gitignore
 
 ## Invoice Template  [/invoice]
 
