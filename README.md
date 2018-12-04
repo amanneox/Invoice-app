@@ -1,5 +1,3 @@
-HOST: http://paperless-dev.ap-south-1.elasticbeanstalk.com/
-
 ## Technology Used
 
 ### Amazon SES - simple email service
@@ -52,6 +50,7 @@ cloud.aws.bucket.baseurl = https://s3.ap-south-1.amazonaws.com/paperless-invoice
 Create a file AwsCredentials.properties api\src\main\resources with following information
 
 accessKey=XXXXXXXXXXXX
+
 secretKey=XXXXXXXXXXXXXXXX
 
 >Keep these files in .gitignore
