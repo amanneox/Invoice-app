@@ -276,3 +276,23 @@ This is where the magic happens just post the user invoice details and the API w
     + Body
 
             OK
+
+
+## Dashboard User   [/user/]            
+### Create a User [POST]
+
+            + Response 201 (application/json)
+
+                + Headers
+
+                        Location: /user/
+
+                + Body
+
+                        {
+                          "name":"username",
+                          "number":"usernumber",
+                          "email": useremail,
+                          "password":"userpassword",
+                          "role": "userrole",
+                        }
